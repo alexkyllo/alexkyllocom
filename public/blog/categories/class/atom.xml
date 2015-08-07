@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Class | Alex Kyllo]]></title>
+  <link href="http://alexkyllo.com/blog/categories/class/atom.xml" rel="self"/>
+  <link href="http://alexkyllo.com/"/>
+  <updated>2015-08-06T21:41:33-07:00</updated>
+  <id>http://alexkyllo.com/</id>
+  <author>
+    <name><![CDATA[Alex Kyllo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Digital Socialism]]></title>
+    <link href="http://alexkyllo.com/blog/2013/02/28/digital-socialism/"/>
+    <updated>2013-02-28T21:23:00-08:00</updated>
+    <id>http://alexkyllo.com/blog/2013/02/28/digital-socialism</id>
+    <content type="html"><![CDATA[<p>While my last post explained why the ability to read and write programming code is becoming the new literacy and shared some of my personal struggles in obtaining it, this post will focus on the political implications of this change, with some historical context.</p>
+
+<p>Today I stumbled on <a href="http://www.wired.com/business/2013/02/socialist-memes-at-ted/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+wired%2Findex+%28Wired%3A+Top+Stories%29">this article in Wired</a>, a mainstream tech magazine, which expressed shock at the left-leaning political content of 2013 TED talks delivered by several prominent sofware developers and computer scientists.</p>
+
+<blockquote><p>“The robots are not going to take all our jobs in the next year or two, but over the longer term,
+if we’re moving into an economy that’s heavy on technology and light on labor, and we are,
+then we have to consider some more radical interventions. For example, something like the guaranteed
+minimum income,” McAfee said. “That idea is probably making some people in this room uncomfortable because
+it’s associated with the extreme left wing.” McAfee then flashed pictures of Marx, Lenin, and Castro,
+before assuring the audience that the idea was also associated with right-wing icons Friedrich Hayek,
+Richard Nixon, and Milton Friedman.</p></blockquote>
+
+<p>Now, forget the current conservative vs. liberal quarrels of American politics today, and think about the environment that socialism and Marxist thought came from. From the late 1800&rsquo;s through the Second World War was a period of rapid industrialization and mass transition away from agriculture and hand crafts as the primary means of employment. Most of the manual, hard labor that used to be done in the fields by humans, became automated through the invention of farm equipment. At the same time, much of the craftsman labor was also automated as machines replaced traditional wood and metalworking.</p>
+
+<p>While these innovations were responsible for massive efficiency gains and dramatically reduced goods prices, they also obsoleted millions of jobs and concentrated the lion&rsquo;s share of these wealth gains into the hands of the early capitalists who invested in such technology.</p>
+
+<p>While this economic shift caused mass unemployment for those whose jobs were automated away, this was temporary because human labor was still a primary input in the industrial process. Factories and mills became the normal workplace for most.</p>
+
+<p>The problem with this system was that humans were treated as industrial inputs and in order to maximize profit, factory owners ground them to dust with long hours, dangerous conditions, and low wages. Public opinion bristled at the unfairness of this arrangement, and so the Marxist worldview became very popular for a while. The idea that exploited factory workers could band together and sieze control of the means of production, so that everyone could enjoy a fairer slice of in the wealth it produced, was a powerful and appealing one at the time. It was only after WWII, when we saw the Soviet Union&rsquo;s experiment begin to falter and devolve into corruption under the dictatorship of Stalin, that this ideology fell completely out of favor in the West. But it left behind a powerful legacy of collective bargaining and protective regulations, through which unionized labor, government bureaus, and NGOs were able to strike a bargain with industrial employers to give us things like weekends, overtime pay, vacation and sick days, healthcare, and safer working conditions. This allowed workers to earn enough to own their residences and enjoy leisure time, and thus the middle class was born.</p>
+
+<p>But in the 1980s under Reagan, we began to question this bargain. Politically we were focused on winning the Cold War, as we were appalled by the oppression that took place in the USSR. We saw freedom as the opposite of Communism, and we feared giving the government too much power, lest it over-tax us and spend our hard-earned money on social programs for other, <em>lazier</em> people. (This fear also stemmed from racism, but that is another topic.) So we wondered whether the social contract was worth it, and if it wasn&rsquo;t possible instead for all of us to be little capitalists and enjoy great freedom and independence as households with minimal government involvement. The 1980s and 90s saw a corresponding growth in small businesses, entrepreneurship and venture capitalism, partly aided by technological gains (fax machines, personal computers, the internet) and financial innovations (greater access to business loans and equity sales to speculative investors) that made it much cheaper and faster to start and grow a business. And naturally, if you feel that you started something from scratch and built it yourself, you want the government sticking its hands in it as little as possible.</p>
+
+<p>But today, as software obsoletes away more and more white-collar jobs, and companies make more profits with less headcount, we are starting to realize that &ldquo;software is eating the world.&rdquo; So it appears the pendulum is again starting to swing the other way, as evidenced by the recent resurgence of socialist thought among the tech community, and the gradual leftward shift in American national politics.</p>
+
+<p>Software developers are realizing this first, because they know that if the only job that software cannot (yet?) automate away is the job of creating software itself, then the work of developing, deploying, and supporting business software will increasingly be the only type of labor readily available in the market. Software developers will become the factory workers of the digital age.</p>
+
+<p>The industrial revolution was temporarily bad for working folk, but became quite good once workers used their numbers to assert their bargaining power, because they were still needed. But what will happen when we reach the point where a multinational, multimillion-dollar corporation no longer needs more than a handful of humans to run it?</p>
+
+<p>Will we simply accept that we are unnecessary, because our labor was merely an overhead cost that corporate board members are happy to do away with so that they can enjoy greater profits? And we&rsquo;re left to fend for ourselves with no salaries or benefits? And do we just watch while a small, but powerful owner class becomes exponentially wealthier and devolves into an old-school aristocracy as they raise generations of children who never have to work? How long can our democracy even last under such a situation?</p>
+
+<p>Or will it be time that we strike a new social bargain&ndash;one in which we recognize that we as a society have created enough wealth to go around, and that if we share it a little more evenly, we can finally afford to upgrade our definition of human rights to include nourishment, shelter, and basic medical care?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why Basic Income Is Becoming a Basic Necessity]]></title>
+    <link href="http://alexkyllo.com/blog/2013/02/15/basic-income/"/>
+    <updated>2013-02-15T23:11:00-08:00</updated>
+    <id>http://alexkyllo.com/blog/2013/02/15/basic-income</id>
+    <content type="html"><![CDATA[<p>This being my first post, I will lay out the underpinnings of some of my political positions that will form the context for my later pieces. As I am an American, I will speak in relation to my own country, but the concepts can be extended to many other places on earth.</p>
+
+<p>America&rsquo;s crisis is profound and it is not going away, because our middle class growth engine is running out of steam.</p>
+
+<p>The phenomenon that the New York Times aptly called <a href="http://www.nytimes.com/2012/12/12/opinion/global/jobs-productivity-and-the-great-decoupling.html">&ldquo;The Great Decoupling&rdquo;</a> of productivity and employment, is a symptom of the fact that most Americans are economically dependent on the wide availability of repetitive, low-skill labor&ndash;the type of labor that is increasingly being done by machines and computers. Because the workers who are replaced by machines&ndash;with the exception of members of politically powerful labor unions&ndash;do not get to share in the profits created by these efficiency gains, technological progress is causing the wealth gap between owners and workers to grow faster and faster. Now, the typical counterpoint to this is that the same workers who are hurt by technology and outsourcing are also gaining from it, as evidenced by their ability to purchase electronic appliances and gadgets. But when you have no income, since you are unemployable, since technology made your skills obsolete, it doesn&rsquo;t matter how cheap the goods are, because the overall trajectory of your net worth is downward. For a shocking number of Americans <a href="http://usatoday30.usatoday.com/money/perfi/basics/story/2012-05-12/households-net-worth-university-of-michigan/54912016/1">(about one in five)</a> it is already negative. What makes this doubly insulting is that the people who reaped the benefits of obsoleting their human employees through technology, are the same people who campaign and vote in ways that tear apart the social safety net that supports laid-off workers.</p>
+
+<p>America has survived this type of mass economic paradigm shift before, in the transition from the mostly agricultural society we had in the centuries before the Great Depression, to the mostly industrial society we had in the 50-some years between World War II and the rise of computers and the internet. But the growing pains from this type of change are suffered by an entire generation of workers&ndash;it is only their children who adapt to the new economy through education.</p>
+
+<p>The most uncomfortable possibility, though, is that we might be entering a &ldquo;post-labor&rdquo; society wherein full employment is no longer necessary or even possible, because all low-skilled labor is automated.</p>
+
+<p>A sound way to reduce the friction and deadweight loss caused by technology-induced obsoletion of human labor, would be to implement a <a href="http://en.wikipedia.org/wiki/Basic_income_guarantee">basic income guarantee</a> along with universal health insurance for all U.S. citizens, as a way of sharing the benefits of our technological gains as a society.</p>
+
+<p>Despite that on the surface it sounds like socialism, there are several strong reasons why this is a good idea:</p>
+
+<ul>
+<li><p>The fact that you don&rsquo;t lose the benefit when you get a job means there is no perverse incentive to stay on the dole, like there is with unemployment benefits. Currently, people who receive welfare or unemployment mentally subtract that amount from the wages they would earn if they were employed, so they have less reason to find work.</p></li>
+<li><p>It would reduce illness, morbidity, and the huge costs that currently go to providing emergency medical care and shelter for the sick who cannot pay for their own care.</p></li>
+<li><p>It would make America more hospitable for its physically and mentally disabled citizens, and make them less dependent on family members.</p></li>
+<li><p>It would remove the desperation factor from the employment equation. No one would have to take a terrible, low-paying job just to survive. Who wants to hire someone who is lazy and only working for base subsistence anyway? You would have to pay people a bit more to do undesirable jobs, but you could also pay people a little less to do interesting, fulfilling jobs. It wouldn&rsquo;t remove the incentive to work and earn money. It would just weed out those who are content to live on the dole and shouldn&rsquo;t be in the workplace anyway.</p></li>
+<li><p>It would save private employers a fortune by reducing their payroll and benefits overhead tremendously. They would no longer have to provide a &ldquo;living wage&rdquo; or health insurance, but could simply pay market value for skilled labor.</p></li>
+<li><p>It would reduce friction in hiring and firing, allowing companies to dismiss underproductive employees more easily, make greater use of temporary, project-based hires, and to take on more young employees whose strongest need is to gain experience and skills but currently cannot because the employees with seniority are firmly entrenched.</p></li>
+<li><p>It would defuse some types of poisonous office politics because no one&rsquo;s basic subsistence would be dependent on staying employed at any one company. Disgruntled employees would be much freer to quit and look elsewhere, rather than staying and spreading negativity. Ladder climbers wouldn&rsquo;t need to do quite as much backstabbing and credit-taking in order to advance, because natural attrition would be somewhat higher in a lower-friction employment market.</p></li>
+<li><p>It would make freelancing and entrepreneurship much less risky and more attractive. How many potential genius innovators are untapped because they also happen not to be big risk-takers? How many more of us would take the leap if we knew that there was a real safety net to catch us if we fell? The risk of failure is very real&ndash;only a small minority of small businesses and startup companies succeed. But how independent and innovative could we be if the odds were just a little bit better?</p></li>
+</ul>
+
+
+<p>Ask yourself this: if American companies are so interested in free market economics, competition, and efficiency, then why do the insides of a typical corporation, with its rigid political hierarchy, central allocation of resources, top-down communication channels, and five-year plans, look so much like communism? Now, if we had a real social safety net that freed us from depending so much on our employers to take care of us outside of work, then perhaps companies would be able to actually operate like free markets on the inside as well as on the outside.</p>
+
+<p>And perhaps a basic income would also level the playing field and reduce barriers to entry for entrepreneurship just enough that average people with sufficiently good ideas and skills would be able to compete with the large firms who are slower to adapt to changes in technology and market demand.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Alex Kyllo]]></title>
+  <link href="http://alexkyllo.com/atom.xml" rel="self"/>
+  <link href="http://alexkyllo.com/"/>
+  <updated>2015-08-06T21:41:33-07:00</updated>
+  <id>http://alexkyllo.com/</id>
+  <author>
+    <name><![CDATA[Alex Kyllo]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Old School Tools]]></title>
+    <link href="http://alexkyllo.com/blog/2013/06/29/old-school-tools/"/>
+    <updated>2013-06-29T23:40:00-07:00</updated>
+    <id>http://alexkyllo.com/blog/2013/06/29/old-school-tools</id>
+    <content type="html"><![CDATA[<p>Lately I&rsquo;ve been working on learning <a href="https://en.wikipedia.org/wiki/Unix">UNIX</a>, so I&rsquo;m challenging myself to write this post in <a href="https://en.wikipedia.org/wiki/Emacs">GNU emacs</a> inside a <a href="https://en.wikipedia.org/wiki/GNU_Screen">GNU screen</a> terminal session. I even spent a few hours earlier browsing the internet in <a href="https://en.wikipedia.org/wiki/Lynx_(web_browser)">Lynx</a> and putting together simple <a href="https://en.wikipedia.org/wiki/Perl">Perl</a> scripts and running them from <a href="https://en.wikipedia.org/wiki/Bash_(Unix_shell)">bash</a>.
+In 2013 these feel like stone tools, having been invented before the internet existed and PCs became commonplace. But the truth is, they are extremely efficient and powerful in skilled hands (not mine&hellip; yet!). And the rise of cloud computing is breathing new life into them, because these cloud machines almost always run free UNIX-based operating systems. In order to set up and deploy code to a virtual machine instance on a cloud host such as Amazon Elastic Cloud Compute (EC2), you have to SSH (secure shell) into it, upon which you will be presented with a bash shell prompt. As such, UNIX tools work with plain text and keyboard shortcuts; because they had to work on old school mainframe terminal systems, they don&rsquo;t assume that the user has a mouse, or sometimes even arrow keys for navigation. So they make it possible to edit text files and run commands with lightning speed, if you know the commands and shortcuts.</p>
+
+<p>So even though there are many slick, modern, feature-packed Interactive Development Environments (IDEs) available to programmers today, more often than not a developer building software for an internet startup will set up their dev environment on a cloud-hosted virtual machine, so they can SSH in from anywhere to write, test, and deploy their app entirely in the cloud.</p>
+
+<p>If have an Apple computer, you&rsquo;re also running a UNIX OS under the hood&ndash;Mac OS X is based on <a href="https://en.wikipedia.org/wiki/BSD">BSD</a>. So you can try UNIX at home, you just need to open up the &ldquo;Terminal&rdquo; app and that will bring up a command line prompt. Most of the tools have help pages that explain how to use them and can be accessed by simply typing <code>man</code> and the name of the program. This tutorial from Zed Shaw will also help get you started: <a href="http://cli.learncodethehardway.org/book/">Learn the Command Line the Hard Way</a>.  It&rsquo;s frustrating and slow to start, but once you get the muscle memory down, working from the terminal is  much faster than dragging around windows and clicking on buttons with your mouse. Plus, after some practice, you will start to feel like a hacker!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Algorithms Are Recipes for Getting Things Done]]></title>
+    <link href="http://alexkyllo.com/blog/2013/04/14/algorithms/"/>
+    <updated>2013-04-14T20:41:00-07:00</updated>
+    <id>http://alexkyllo.com/blog/2013/04/14/algorithms</id>
+    <content type="html"><![CDATA[<p>Since I started reading and taking a course about <a href="http://en.wikipedia.org/wiki/Algorithm">algorithms</a>, I&rsquo;ve come to understand that they are much more than just complicated math formulas that Google uses to crawl the web and rank my search results. Algorithms look intimidating when written out in programming code&ndash;or worse, mathematical notation&ndash;but their definition and purpose are simple. An algorithm is just a finite, repeatable list of steps to solve a problem.</p>
+
+<p>In other words, an algorithm is <em>a recipe for getting sh*t done.</em></p>
+
+<p>To illustrate this point, I&rsquo;ll provide a classic example of a use case for an algorithm: sorting a list. Imagine you&rsquo;re playing Scrabble and you want to sort your tiles so that you can find the ones you want to use more quickly.</p>
+
+<p>OK, but how do you sort your tiles?</p>
+
+<p>&ldquo;Easy,&rdquo; you might think, &ldquo;just put them in alphabetical order from left to right.&rdquo;</p>
+
+<p>But how would you explain, step-by-step, what you are actually doing when you sort them? Can you break it down into a list of instructions?</p>
+
+<p>The way you would instinctively sort your tiles, if broken down like a recipe, might look like this:</p>
+
+<ul>
+<li>Scan your rack of tiles from left to right, looking for the letter closest to beginning of the alphabet</li>
+<li>When you find it, swap it with the leftmost tile.</li>
+<li>Repeat steps one and two with the rest of the tiles on the rack that are not sorted yet.</li>
+</ul>
+
+
+<p>And you would have found a correct sorting algorithm, which you could test out like this:</p>
+
+<pre><code>SCRABBLE &lt;= unsorted
+A CRSBBLE &lt;= 'A' is the lowest letter, so swap it with the first letter 'S'
+AB RSCBLE &lt;= 'B' is the next lowest letter, so swap it with the second letter 'C'
+ABB SCRLE &lt;= 'B' is the next lowest letter (again), so swap it with the next letter 'R'
+ABBC SRLE &lt;= and so on...
+ABBCE RLS
+ABBCEL RS &lt;= (hey, these two are already in order)
+ABBCELRS &lt;= and now it's sorted.
+</code></pre>
+
+<p>This is what computer scientists call a <a href="http://en.wikipedia.org/wiki/Selection_sort">&ldquo;selection sort.&rdquo;</a> They would also call it a &ldquo;naive&rdquo; or &ldquo;brute-force&rdquo; algorithm, because as it turns out, it&rsquo;s a very inefficient way to sort a list. Since for each letter in the list, you have to scan through all the other letters to see which is lowest, that means that if your list has <em>n</em> letters, you have to make on the order of <em>n</em><sup>2</sup> comparisons in order to completely sort the list. So as the size of the list you need to sort grows, the amount of time it will take to sort the list grows <em>quadratically</em> (proportional to the square of the number of items in the list). Not a big deal when sorting Scrabble tiles, but what if you&rsquo;re in a position where you need to sort a list with a million entries? Maybe you work at a phone book company in a city with a million residents. A White Pages with the people&rsquo;s surnames in unsorted order wouldn&rsquo;t be very useful, would it?</p>
+
+<p>Now, you should probably use a computer to do this job, as there&rsquo;s no way you could possibly sort a list of a million names manually in one lifetime. Computers can make comparisons very quickly&ndash;let&rsquo;s say yours takes just a millisecond to compare two letters and put them in order. But with a million-squared comparisons to do, sorting the entire list would still take the computer almost 32 years!</p>
+
+<p>Clearly, if you actually have an unsorted list that&rsquo;s a million entries long, and that phone book is supposed to get printed next Monday, you need to do something drastic in order to get it sorted faster.</p>
+
+<p>There are three ways you could achieve that:</p>
+
+<ol>
+<li>Get a faster computer that can do each comparison in less than a millisecond</li>
+<li>Get more computers and divide the task among them</li>
+<li>Find a faster sorting algorithm that makes fewer comparisons for each item in the list.</li>
+</ol>
+
+
+<p>If you actually try the first two of these methods, you will find out that you quickly run in to a wall. Getting a faster computer helps, but you probably cannot afford a computer that is 10x faster than yours&ndash;those are called &ldquo;supercomputers&rdquo; and they cost millions of dollars. And even that 10x faster computer would still take over 3 years to get the job done.</p>
+
+<p>The second option would be equivalent to chopping up the unsorted list into many smaller lists, using a separate computer to sort each sub-list, and then merging the sorted sub-lists back together into one sorted list. This would certainly be cheaper than buying one supercomputer, but you still have to buy many normal computers, and then figure out how to do the splitting and merging.</p>
+
+<p>So, that leaves #3&ndash;get a better algorithm. And as it turns out, mathematicians and computer scientists have come up with <a href="http://en.wikipedia.org/wiki/Sorting_algorithm#Comparison_of_algorithms">a lot of better sorting algorithms</a> over the years, and are still working on coming up with new ones. They are not all equally good, and they each have strengths and weaknesses, but the best algorithms among these could get those million phone book entries sorted in a matter of just a few <em>hours</em> on a normal computer. Still a long time to wait if you&rsquo;re in a hurry, but much better than waiting <em>years</em> for a lesser algorithm to finish running. And best of all, these efficient algorithms are free! It doesn&rsquo;t cost anything to use a better algorithm&ndash;at least one that has already been discovered.</p>
+
+<p>Now the reason I bring up this sorting example is not because sorting Scrabble tiles or the White Pages is particularly interesting, but because <em>an algorithm is just a formula for solving a problem.</em> So whenever there is a large amount of work or a complex problem to be solved and it doesn&rsquo;t look like you&rsquo;ll be able to get it done in time, you still have only the 3 fundamental approaches above to choose from, to improve your outlook:</p>
+
+<ol>
+<li>Work harder/faster/longer (aka caffeine, Adderall and/or just staying really late)</li>
+<li>Get others to help you (aka division of labor)</li>
+<li>Use a more efficient process</li>
+</ol>
+
+
+<p>You can probably see where I&rsquo;m going with this now, but #3 is always the right answer, until your process is so efficient that it can&rsquo;t be optimized any further, then you can start looking at options 1 and 2. This is what &ldquo;work smarter, not harder&rdquo; really means.</p>
+
+<p>Companies have a problem to solve, and that problem is always some variation on taking money and turning it into more money, aka &ldquo;adding value.&rdquo; When the amount of sales increases, the company needs to provide service to all of those customers. But how much additional help does the company need to hire in order to handle each additional customer? In other words, how well does the company&rsquo;s business model <em>scale?</em></p>
+
+<p>A &ldquo;business model&rdquo; can be thought of in an abstract way as just a type of algorithm for solving a business problem. Many businesses will push their workers to work harder and longer hours in order to handle an increased volume of work. Others will hire more workers so that each worker continues doing about the same amount of work, and the company steadly grows in size (hopefully). Most companies use some combination of these two strategies, and they both have a cost. But the company that chooses to make the business model itself more efficient, by removing unnecessary steps from its work processes, will be the most able to scale.</p>
+
+<p>This is also a major reason why businesses fail. If your company&rsquo;s business &ldquo;algorithm&rdquo; is an inefficient one, its profitability will deteriorate with size as the rate of cost growth is faster than the rate of revenue growth. And when companies are faced with financial losses they launch &ldquo;cost cutting&rdquo; initiatives such as mass layoffs and reduced spending on sales (particularly advertising and entertainment expenses), but because these measures also reduce the ability to attract and process new business, what these really amount to is scaling down the company&rsquo;s operations&ndash;it may reduce losses, but at the cost of growth, giving up market share to competitors and perhaps permanently stunting the business&rsquo;s future growth prospects. The alternative way to cut costs&ndash;without affecting the revenue stream or throughput capacity of the business&ndash;is to improve the algorithm. Don&rsquo;t scale down your business by laying off workers and cutting back sales expenses&ndash;just improve productivity by finding clever ways to reduce the amount of steps or sub-tasks each individual worker needs to take in order to get a task done. This isn&rsquo;t always possible in the real world, and it may be too little, too late for a company with a very unhealthy balance sheet, but it&rsquo;s still the right philosophy to approach the problem from the manager&rsquo;s perspective.</p>
+
+<p>And although managers have to deal with real-world complexity and manage business processes that are a lot more complicated than a simple sorting algorithm, the nice thing is that people, unlike math formulas, will <em>tell</em> you what&rsquo;s slowing them down. They know, you just have to ask them. (This is a topic for another post, but almost all people actually <em>like</em> working and <em>want</em> to be good at their jobs. It&rsquo;s dealing with office politics and time-wasting red tape that they hate.) And taking their advice is usually cheap and can even be free&ndash;things like &ldquo;stop making us waste hours in pointless meetings&rdquo; or &ldquo;stop making us put together those daily status reports you never read.&rdquo;</p>
+
+<p>Now, the benefits of thinking algorithmically do not only apply to the workplace. You can also use this in your personal life to make yourself more productive. Cutting out a few unnecessary steps from your routine can save you perhaps a few minutes a day, which will add up to years over your lifetime.  Don&rsquo;t stay late at the office unless it&rsquo;s an emergency or you actually get overtime pay. If you need to stay late on a regular basis, you are working inefficiently and you need to examine your work process to eliminate time-wasters. Invest in quality labor-saving appliances that reduce the time you need to spend on household chores, freeing you up to either do more income-generating work or spend quality time with family and friends or on hobbies that you enjoy. Before you start working on something, stop and take a moment to think of the most effective way to get the task done. Efficient algorithms are sometimes counter-intuitive, and can take a little stroke of genius to come up with on your own, but for any sizeable job, a plan that you put some algorithmic thought into will beat out the &ldquo;brute force&rdquo; method handily.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Breathing Through Tubes]]></title>
+    <link href="http://alexkyllo.com/blog/2013/04/06/breathing-through-tubes/"/>
+    <updated>2013-04-06T19:58:00-07:00</updated>
+    <id>http://alexkyllo.com/blog/2013/04/06/breathing-through-tubes</id>
+    <content type="html"><![CDATA[<p>I&rsquo;ll start this post off with a quote that inspired it, from Paul Graham&rsquo;s 2012 essay <a href="http://www.paulgraham.com/property.html">Defining Property</a>:</p>
+
+<blockquote><p>The record labels and movie studios used to distribute what they made like air shipped through tubes on a moon base. But with the
+arrival of networks, it&rsquo;s as if we&rsquo;ve moved to a planet with a breathable atmosphere. Data moves like smells now. And through a
+combination of wishful thinking and short-term greed, the labels and studios have put themselves in the position of the food shop
+owner, accusing us all of stealing their smells.</p></blockquote>
+
+<p>By comparing digital data to air, and comparing songs and movies to smells emanating from a restaurant, Graham is making the point that it just doesn&rsquo;t work to charge for copies of media content anymore, at least without &ldquo;warping society&rdquo; by successfully lobbying for laws that force us to use obsolete technology. &ldquo;Companies selling smells on the moon base could continue to sell them on the Earth, if they lobbied successfully for laws requiring us all to continue to breathe through tubes down here too, even though we no longer needed to,&rdquo; says Graham. And that is exactly what the MPAA and RIAA have done with the DMCA (Digital Millenium Copyright Act).</p>
+
+<p>Since I read this essay, I&rsquo;ve been thinking intellectual property (IP) in the tech economy in a broader sense for a while now, and the overwhelming feeling I get is that our system is not just flawed, but <em>broken</em>. Finding a reasonable and equitable solution to this problem is going to be major challenge and a test of our society, as property rights are a key component of the &ldquo;grand bargain&rdquo; in which we all participate as a society.</p>
+
+<p>Now, we&rsquo;ve all known about the filesharing debate since Napster, (then its clones like Kazaa, Morpheus, Limewire), and later, BitTorrent. The RIAA and MPAA were victorious in having peer-to-peer sharing of digital representations of copyrighted works declared illegal and file-sharers selectively punished with six-figure fines to make an example of them. Yet this was somewhat of a pyrrhic victory as it made these organizations widely reviled by their own customers. Napster et al were forced to innovate in order to stay above-board, so they pivoted and negotiated licensing deals to become paid subscription services. With newer entrants like Pandora and Spotify experiencing success, this is now a proven business model. Meanwhile Hulu, Netflix and others are doing the same for movies and TV. People may not be willing to pay high per-file costs for digital copies, but they are willing to pay for convenience of having content easily streamed to any device. And although these services are legal and properly licensed, it is important to remember that the content owners fought tooth-and-nail to suppress them. They are still fighting further innovations to protect their profits, only giving in to each new technology when it becomes truly inevitable. Therefore the &ldquo;cutting edge&rdquo; in this market is always outside the law, and this has a chilling effect on innovation. Meanwhile these organizations continue to lobby to introduce legislation like <a href="http://en.wikipedia.org/wiki/Stop_Online_Piracy_Act">SOPA</a> to grant themselves the power to censor the internet and expand criminal penalties for sharing copyrighted data.</p>
+
+<p>In addition to legal threats and censorship, another strategy that content owners use to protect their copyrights is by using DRM (Digital Rights Management), a catchall name for anti-copying encryption software. Of course this sparked a bit of an arms race, as each time they implement a new DRM system, users always find a way to crack it. So they have had to make cracking the code illegal as well. This led to a less-publicized but still very important copyright battle in the <a href="http://en.wikipedia.org/wiki/DeCSS">DeCSS</a> affair, which led to a criminal trial in Norway, along with the <a href="http://en.wikipedia.org/wiki/AACS_encryption_key_controversy">AACS encryption key controversy</a>, which provoked the MPAA and AACS to serve many websites with DMCA demand notices. These incidents involved people sharing source code and encryption keys for cracking HD-DVD players, represented as hexadecimal numbers, giving rise to the concept of <a href="http://en.wikipedia.org/wiki/Illegal_number">Illegal numbers</a>. The concept is that since <em>any</em> information, including executable computer programs and copyrighted content, can be represented as a number, some numbers are themselves secret and protected by copyright, making them illegal to distribute or even to possess. That&rsquo;s right, the number 99,206,706,771,272,430,000 for example is <em>contraband</em>. Users correctly saw this as a threat to free speech, and in response to attempted censorship, they spread it and other &ldquo;illegal numbers&rdquo; all over the internet, to the point where they were impossible to contain. Meanwhile the DRM encryption arms race continues, most recently with the attempt to introduce DRM into the HTML5 standard. <a href="http://www.engadget.com/2012/02/23/google-microsoft-and-netflix-want-drm-like-encryption-in-html5/">This particular effort is even being backed by Google, Microsoft and Netflix.</a> For shame.</p>
+
+<p>I&rsquo;ve been picking on organizations like the RIAA and MPAA, but they are not the only ones who work to expand and abuse IP rights for profit. The most recent and blatant misuse of IP to suppress technological innovation, and make a fast buck in the process, is the phenomenon of &ldquo;patent trolls.&rdquo; Joel Spolsky gives <a href="http://www.joelonsoftware.com/items/2013/04/02.html">a great, brief explanation of what they are and how they are running a high-tech, legal protection racket.</a> These people have made lucrative careers of setting up shell companies, acquiring overly broad, nearly expired tech patents and abusing them to threaten actual productive companies with costly litigation if they refuse to pay their extortionate &ldquo;licensing&rdquo; fees. I do not think these trolls will last much longer, as they are now broadly reviled and have raised the ire of major Silicon Valley companies, who are starting to fight back in court and win. Judges also seem unsupportive of these trolls, if <a href="http://www.popehat.com/tag/prenda-law/">the Prenda Law case as documented at popehat.com</a> is any evidence.</p>
+
+<p>While for the time being, there&rsquo;s basically nothing an innovative company can do to avoid drive-by litigation threats from patent trolls, on the other hand one can, with a crack legal team and a little ingenuity, find big enough loopholes in the outdated IP laws to fit a business model through. Don&rsquo;t you think that in the future, we will all eventually be watching our live TV over the internet instead of via cable? Well <a href="https://www.aereo.com/">Aereo</a> is offering that now&ndash;and not only can you watch the content live, you can also &ldquo;record&rdquo; it to watch later as you would with a DVR. Now, what is the the difference between this and downloading the content from a file-sharing service? Conceptually, almost nothing. But due to a technicality in the law, <a href="http://arstechnica.com/tech-policy/2013/04/appeals-court-upholds-legality-of-aereos-tiny-antennas-scheme/">the legality of their business model was upheld in court</a>, at least for now. Here&rsquo;s how the scheme works:</p>
+
+<blockquote><p>In Aereo&rsquo;s server rooms are row after row of tiny antennas mounted on circuit boards. When a user wants to view or record a
+television program, Aereo assigns him an antenna exclusively for his own use. And like Cablevision, when 1000 users record the
+same program, Aereo creates 1,000 redundant copies.</p></blockquote>
+
+<p>Tiny antennas&hellip; redundant copies&hellip; right. Now there is obviously no technical reason at all why it would be necessary to have thousands of redundant copies of the same content in their data center, and install one tiny antenna per customer, just to serve TV show files over the internet. But the fact that no two customers are &ldquo;sharing&rdquo; the same copy of the show is the only reason why their business model isn&rsquo;t legally considered copyright infringement. It will be very interesting to see what happens with Aereo&ndash;whether the loophole they&rsquo;ve found for themselves will be forced open wider, or whether the much larger and wealthier content distributors will find a way to use the legal system to sew it shut.</p>
+
+<p>Originally, copyrights, trademarks, and other legal IP protections were conceived in order to encourage innovation and artistic expression by preventing someone else from misappropriating one&rsquo;s creative work as their own. Patents were designed to give inventors a head start by affording them a <em>temporary</em> monopoly on selling the technology they invented, in order to prevent a competitor from copying their invention and bringing it to market faster.</p>
+
+<p>But what these IP protections are actually being used for, is to entrench profitable business models, and stifle competition in order to perpetuate rent-seeking behavior. See, in an efficient economy, no business can stay profitable for long without innovating, because competiting actors will use technological progress to introduce products that are incrementally better and cheaper, until your product is totally obsolete. The only way to stop that from happening, at least temporarily, is by protecting your business model with patents and copyrights, and threatening costly litigation. This is how record companies and movie studios are still able to make a fortune selling their entertainment on spinning disks, which are otherwise thoroughly obsolete. To borrow Graham&rsquo;s analogy, they are forcing us to breathe through tubes by making it illegal to breathe the air freely, so that they can continue to charge for smells.</p>
+
+<p>I am starting to believe that weakening copyrights and patents, and strengthening our right to freely disseminate information, is a key part of how we are going to make the future more economically equitable than the present. By misusing the legal system to expand intellectual property rights and protect their profitable business models from disruptive tech innovation, these companies are exacerbating the inequitable distribution of wealth in our society. Fighting to defend our free speech rights and expand &ldquo;fair use&rdquo; protections is an important way that we are going to enable ourselves to all use technology to create wealth for ourselves and share it with each other. (Remember that wealth does not mean &ldquo;money,&rdquo; but much more generally, anything people want.)</p>
+
+<p>The most common criticism of anti-copyright beliefs is that they are merely a thin justification for freeloading. But really, what harm is &ldquo;freeloading&rdquo; a non-exclusive good? Copying is <em>not</em> the same as stealing (or &ldquo;piracy,&rdquo; which means using violence to steal). Copying doesn&rsquo;t actually cost anyone else anything nor deprive anyone else of the ability to enjoy the information being copied. The claim that copying is depriving the content owner of the revenue equivalent to the price they charge for a copy of the media, is only valid if you accept the assertion that a copyright is and should be a perpetual, exclusive (but transferrable, for a price) license to distribute copies of a piece of information. I reject such an assertion, as that is very far from what copyrights were ever intended to be.</p>
+
+<p>Now, if copyrights are weakened to the point that file sharing becomes legal (which I think is inevitable), I don&rsquo;t claim to know exactly what will happen to movie studios, record companies, publishing houses, etc. if technology makes it impossible to continue under their current business model of acquiring the exclusive right to sell individual copies of artists' work. But I am confident that if society values blockbuster motion pictures, smash-hit songs, and bestseller novels, we will find a way to pay for them.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Digital Socialism]]></title>
+    <link href="http://alexkyllo.com/blog/2013/02/28/digital-socialism/"/>
+    <updated>2013-02-28T21:23:00-08:00</updated>
+    <id>http://alexkyllo.com/blog/2013/02/28/digital-socialism</id>
+    <content type="html"><![CDATA[<p>While my last post explained why the ability to read and write programming code is becoming the new literacy and shared some of my personal struggles in obtaining it, this post will focus on the political implications of this change, with some historical context.</p>
+
+<p>Today I stumbled on <a href="http://www.wired.com/business/2013/02/socialist-memes-at-ted/?utm_source=feedburner&amp;utm_medium=feed&amp;utm_campaign=Feed%3A+wired%2Findex+%28Wired%3A+Top+Stories%29">this article in Wired</a>, a mainstream tech magazine, which expressed shock at the left-leaning political content of 2013 TED talks delivered by several prominent sofware developers and computer scientists.</p>
+
+<blockquote><p>“The robots are not going to take all our jobs in the next year or two, but over the longer term,
+if we’re moving into an economy that’s heavy on technology and light on labor, and we are,
+then we have to consider some more radical interventions. For example, something like the guaranteed
+minimum income,” McAfee said. “That idea is probably making some people in this room uncomfortable because
+it’s associated with the extreme left wing.” McAfee then flashed pictures of Marx, Lenin, and Castro,
+before assuring the audience that the idea was also associated with right-wing icons Friedrich Hayek,
+Richard Nixon, and Milton Friedman.</p></blockquote>
+
+<p>Now, forget the current conservative vs. liberal quarrels of American politics today, and think about the environment that socialism and Marxist thought came from. From the late 1800&rsquo;s through the Second World War was a period of rapid industrialization and mass transition away from agriculture and hand crafts as the primary means of employment. Most of the manual, hard labor that used to be done in the fields by humans, became automated through the invention of farm equipment. At the same time, much of the craftsman labor was also automated as machines replaced traditional wood and metalworking.</p>
+
+<p>While these innovations were responsible for massive efficiency gains and dramatically reduced goods prices, they also obsoleted millions of jobs and concentrated the lion&rsquo;s share of these wealth gains into the hands of the early capitalists who invested in such technology.</p>
+
+<p>While this economic shift caused mass unemployment for those whose jobs were automated away, this was temporary because human labor was still a primary input in the industrial process. Factories and mills became the normal workplace for most.</p>
+
+<p>The problem with this system was that humans were treated as industrial inputs and in order to maximize profit, factory owners ground them to dust with long hours, dangerous conditions, and low wages. Public opinion bristled at the unfairness of this arrangement, and so the Marxist worldview became very popular for a while. The idea that exploited factory workers could band together and sieze control of the means of production, so that everyone could enjoy a fairer slice of in the wealth it produced, was a powerful and appealing one at the time. It was only after WWII, when we saw the Soviet Union&rsquo;s experiment begin to falter and devolve into corruption under the dictatorship of Stalin, that this ideology fell completely out of favor in the West. But it left behind a powerful legacy of collective bargaining and protective regulations, through which unionized labor, government bureaus, and NGOs were able to strike a bargain with industrial employers to give us things like weekends, overtime pay, vacation and sick days, healthcare, and safer working conditions. This allowed workers to earn enough to own their residences and enjoy leisure time, and thus the middle class was born.</p>
+
+<p>But in the 1980s under Reagan, we began to question this bargain. Politically we were focused on winning the Cold War, as we were appalled by the oppression that took place in the USSR. We saw freedom as the opposite of Communism, and we feared giving the government too much power, lest it over-tax us and spend our hard-earned money on social programs for other, <em>lazier</em> people. (This fear also stemmed from racism, but that is another topic.) So we wondered whether the social contract was worth it, and if it wasn&rsquo;t possible instead for all of us to be little capitalists and enjoy great freedom and independence as households with minimal government involvement. The 1980s and 90s saw a corresponding growth in small businesses, entrepreneurship and venture capitalism, partly aided by technological gains (fax machines, personal computers, the internet) and financial innovations (greater access to business loans and equity sales to speculative investors) that made it much cheaper and faster to start and grow a business. And naturally, if you feel that you started something from scratch and built it yourself, you want the government sticking its hands in it as little as possible.</p>
+
+<p>But today, as software obsoletes away more and more white-collar jobs, and companies make more profits with less headcount, we are starting to realize that &ldquo;software is eating the world.&rdquo; So it appears the pendulum is again starting to swing the other way, as evidenced by the recent resurgence of socialist thought among the tech community, and the gradual leftward shift in American national politics.</p>
+
+<p>Software developers are realizing this first, because they know that if the only job that software cannot (yet?) automate away is the job of creating software itself, then the work of developing, deploying, and supporting business software will increasingly be the only type of labor readily available in the market. Software developers will become the factory workers of the digital age.</p>
+
+<p>The industrial revolution was temporarily bad for working folk, but became quite good once workers used their numbers to assert their bargaining power, because they were still needed. But what will happen when we reach the point where a multinational, multimillion-dollar corporation no longer needs more than a handful of humans to run it?</p>
+
+<p>Will we simply accept that we are unnecessary, because our labor was merely an overhead cost that corporate board members are happy to do away with so that they can enjoy greater profits? And we&rsquo;re left to fend for ourselves with no salaries or benefits? And do we just watch while a small, but powerful owner class becomes exponentially wealthier and devolves into an old-school aristocracy as they raise generations of children who never have to work? How long can our democracy even last under such a situation?</p>
+
+<p>Or will it be time that we strike a new social bargain&ndash;one in which we recognize that we as a society have created enough wealth to go around, and that if we share it a little more evenly, we can finally afford to upgrade our definition of human rights to include nourishment, shelter, and basic medical care?</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Literacy]]></title>
+    <link href="http://alexkyllo.com/blog/2013/02/26/literacy/"/>
+    <updated>2013-02-26T21:37:00-08:00</updated>
+    <id>http://alexkyllo.com/blog/2013/02/26/literacy</id>
+    <content type="html"><![CDATA[<p>Judging by the fact that more and more stories are bubbling up in the mainstream media about initiatives for teaching children to write computer programs, I&rsquo;ve been feeling lately that a sea change is coming.</p>
+
+<p>Then today, I saw this video, in which Bill Gates, Mark Zuckerberg, will.i.am, and many other celebrities and successful geeks explain why learning code is A. a good idea and B. not that scary:</p>
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/nKIu9yen5nc" frameborder="0" allowfullscreen></iframe>
+
+
+<p>This video certainly downplays the challenges a bit&ndash;and not because programming languages are inscrutable gobbledygook, but simply because questions like &ldquo;Where should I start?&rdquo;, &ldquo;What language(s) should I study?&rdquo;, and &ldquo;What sort of program do I want to make?&rdquo; are actually very difficult to answer.</p>
+
+<p>But this video does point out two key concepts very well:</p>
+
+<ul>
+<li>You don&rsquo;t have to be a computer scientist or a nerd to learn how to program&ndash;it is just like any other skill, and even like literacy (&ldquo;You don&rsquo;t have to be a genius to code&ndash;do you have to be a genius to read?&rdquo;)</li>
+<li>People who don&rsquo;t learn how to program anything at all are going to be left in the dust by people who do (&ldquo;You&rsquo;re going to look like you have magic powers compared to everybody else&rdquo;)</li>
+</ul>
+
+
+<p>I will write on the second point in the next post, but right now I can speak on the first point from my own experience. My own desire to &ldquo;learn to code&rdquo; came out of frustration in the workplace. At my last job, I couldn&rsquo;t help but be bothered by the amount of manual effort that my colleagues and I spent on creating daily, weekly, and monthly, and on-demand reports to send to managers. When I say &ldquo;reports&rdquo; I mean Excel spreadsheets. With every employee creating a report and e-mailing it to his/her manager so frequently, there had to be millions of them floating around, with none of them under any sort of version control. Most of the time report creation involved looking up various points of data in &ldquo;the system&rdquo; and somehow getting them into the spreadsheet. The savvier employees tended to look for the &ldquo;download&rdquo; or &ldquo;export to excel&rdquo; functions in the system and craft their reports from the resulting data dump, while the more computer-illiterate would type the individual values into the cells and maybe even sum them up by punching them into a calculator by hand, blissfully unaware of Excel functions or even copy/paste.</p>
+
+<p>Now I had never &ldquo;programmed&rdquo; before, the closest thing I did beforehand was Excel functions like SUM or VLOOKUP, and making a few static HTML pages for hosting my resume online when I was in college. But something in me screamed, &ldquo;There must be a better way to do this!&rdquo; So without much of a clue what I was doing, I opened up Access to create a database for sales leads and asked my coworkers to input the leads in there so we could keep track of them over time, instead of sending them around in e-mailed spreadsheets.</p>
+
+<p>Now, all I really knew about Access at this point was that it is &ldquo;a database program.&rdquo; But the desire to create reports from the database led to playing around with the Query Builder, which sucked me into learning SQL, which got me to thinking, &ldquo;What if I could actually make an application with a user interface that everyone in the office could use to pull reports on sales leads?&rdquo;</p>
+
+<p>At that point, the question became &ldquo;What technology or programming language do I need to learn in order to do this?&rdquo; And my search for the answer led me to a basic web programming course where I learned the HTML/CSS, PHP, Javascript, and MySQL stack, which is probably still the simplest way to build a fully-functioning, database-driven web application. Surprisingly to me at the time, it is completely unnecessary to have even half a computer science degree in order to do this. You don&rsquo;t even really need a textbook. Thanks to the wealth of tutorials and references on the internet, all it takes is a computer with an internet connection, and a lot of patience for trial and error.</p>
+
+<p>However, my desire to <em>learn more programming</em> has led me deeper and deeper into the realm of computer science and I now fear I&rsquo;m getting a bit lost in the weeds trying to learn too many different programming languages. While learning Ruby on Rails concurrently with Obj-C to make iPhone apps, Java to make Android apps, and also dabbling in Coursera courses on algorithms and functional programming, somehow seemed like a good idea at the time, the reality is that it&rsquo;s not a buffet and you do have to make some choices about what to learn. And while the internet is a great source of information, it is a terrible source of recommendation, because the hive-mind has no consensus. If you go googling &ldquo;what programming language should I learn,&rdquo; you will get a variety of answers based on personal opinion. And while this may lead you to believe that your choice of language doesn&rsquo;t matter, it actually does because some languages are great for certain purposes and terrible for others. So the only good answer to this question is &ldquo;depends.&rdquo;</p>
+
+<p>So while I may have wasted a few months learning languages I didn&rsquo;t need to learn, or learning about programming paradigms that are far removed from business, I am now realizing that along the way I&rsquo;ve picked up a lot&ndash;I am getting fairly comfortable with the UNIX and Windows command lines, version control tools like Git, a variety of text editors like emacs and IDEs like Eclipse and XCode. I know a few tools for quickly creating basic shell scripts, desktop apps, and web apps, and have built a few of each, both for making my job easier at work, and for practice. Most importantly I have learned to identify <em>when</em> a piece of software could help solve a problem, and I am starting to learn <em>how</em> to approach that problem with software. Now the trick is going to be to take what I have learned and find another particular business problem to focus on, and sharpen a particular subset of my programming skills to the point where they become second nature.</p>
+
+<p>This is where I&rsquo;m at after about a year since I first picked up <a href="http://www.webstepbook.com/">Web Programming Step by Step</a> with the goal of making a web app for keeping track of sales lead data at the office. I am grasping at &ldquo;literacy&rdquo; but I still have a long way to go until I will feel fully fluent.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Why Basic Income Is Becoming a Basic Necessity]]></title>
+    <link href="http://alexkyllo.com/blog/2013/02/15/basic-income/"/>
+    <updated>2013-02-15T23:11:00-08:00</updated>
+    <id>http://alexkyllo.com/blog/2013/02/15/basic-income</id>
+    <content type="html"><![CDATA[<p>This being my first post, I will lay out the underpinnings of some of my political positions that will form the context for my later pieces. As I am an American, I will speak in relation to my own country, but the concepts can be extended to many other places on earth.</p>
+
+<p>America&rsquo;s crisis is profound and it is not going away, because our middle class growth engine is running out of steam.</p>
+
+<p>The phenomenon that the New York Times aptly called <a href="http://www.nytimes.com/2012/12/12/opinion/global/jobs-productivity-and-the-great-decoupling.html">&ldquo;The Great Decoupling&rdquo;</a> of productivity and employment, is a symptom of the fact that most Americans are economically dependent on the wide availability of repetitive, low-skill labor&ndash;the type of labor that is increasingly being done by machines and computers. Because the workers who are replaced by machines&ndash;with the exception of members of politically powerful labor unions&ndash;do not get to share in the profits created by these efficiency gains, technological progress is causing the wealth gap between owners and workers to grow faster and faster. Now, the typical counterpoint to this is that the same workers who are hurt by technology and outsourcing are also gaining from it, as evidenced by their ability to purchase electronic appliances and gadgets. But when you have no income, since you are unemployable, since technology made your skills obsolete, it doesn&rsquo;t matter how cheap the goods are, because the overall trajectory of your net worth is downward. For a shocking number of Americans <a href="http://usatoday30.usatoday.com/money/perfi/basics/story/2012-05-12/households-net-worth-university-of-michigan/54912016/1">(about one in five)</a> it is already negative. What makes this doubly insulting is that the people who reaped the benefits of obsoleting their human employees through technology, are the same people who campaign and vote in ways that tear apart the social safety net that supports laid-off workers.</p>
+
+<p>America has survived this type of mass economic paradigm shift before, in the transition from the mostly agricultural society we had in the centuries before the Great Depression, to the mostly industrial society we had in the 50-some years between World War II and the rise of computers and the internet. But the growing pains from this type of change are suffered by an entire generation of workers&ndash;it is only their children who adapt to the new economy through education.</p>
+
+<p>The most uncomfortable possibility, though, is that we might be entering a &ldquo;post-labor&rdquo; society wherein full employment is no longer necessary or even possible, because all low-skilled labor is automated.</p>
+
+<p>A sound way to reduce the friction and deadweight loss caused by technology-induced obsoletion of human labor, would be to implement a <a href="http://en.wikipedia.org/wiki/Basic_income_guarantee">basic income guarantee</a> along with universal health insurance for all U.S. citizens, as a way of sharing the benefits of our technological gains as a society.</p>
+
+<p>Despite that on the surface it sounds like socialism, there are several strong reasons why this is a good idea:</p>
+
+<ul>
+<li><p>The fact that you don&rsquo;t lose the benefit when you get a job means there is no perverse incentive to stay on the dole, like there is with unemployment benefits. Currently, people who receive welfare or unemployment mentally subtract that amount from the wages they would earn if they were employed, so they have less reason to find work.</p></li>
+<li><p>It would reduce illness, morbidity, and the huge costs that currently go to providing emergency medical care and shelter for the sick who cannot pay for their own care.</p></li>
+<li><p>It would make America more hospitable for its physically and mentally disabled citizens, and make them less dependent on family members.</p></li>
+<li><p>It would remove the desperation factor from the employment equation. No one would have to take a terrible, low-paying job just to survive. Who wants to hire someone who is lazy and only working for base subsistence anyway? You would have to pay people a bit more to do undesirable jobs, but you could also pay people a little less to do interesting, fulfilling jobs. It wouldn&rsquo;t remove the incentive to work and earn money. It would just weed out those who are content to live on the dole and shouldn&rsquo;t be in the workplace anyway.</p></li>
+<li><p>It would save private employers a fortune by reducing their payroll and benefits overhead tremendously. They would no longer have to provide a &ldquo;living wage&rdquo; or health insurance, but could simply pay market value for skilled labor.</p></li>
+<li><p>It would reduce friction in hiring and firing, allowing companies to dismiss underproductive employees more easily, make greater use of temporary, project-based hires, and to take on more young employees whose strongest need is to gain experience and skills but currently cannot because the employees with seniority are firmly entrenched.</p></li>
+<li><p>It would defuse some types of poisonous office politics because no one&rsquo;s basic subsistence would be dependent on staying employed at any one company. Disgruntled employees would be much freer to quit and look elsewhere, rather than staying and spreading negativity. Ladder climbers wouldn&rsquo;t need to do quite as much backstabbing and credit-taking in order to advance, because natural attrition would be somewhat higher in a lower-friction employment market.</p></li>
+<li><p>It would make freelancing and entrepreneurship much less risky and more attractive. How many potential genius innovators are untapped because they also happen not to be big risk-takers? How many more of us would take the leap if we knew that there was a real safety net to catch us if we fell? The risk of failure is very real&ndash;only a small minority of small businesses and startup companies succeed. But how independent and innovative could we be if the odds were just a little bit better?</p></li>
+</ul>
+
+
+<p>Ask yourself this: if American companies are so interested in free market economics, competition, and efficiency, then why do the insides of a typical corporation, with its rigid political hierarchy, central allocation of resources, top-down communication channels, and five-year plans, look so much like communism? Now, if we had a real social safety net that freed us from depending so much on our employers to take care of us outside of work, then perhaps companies would be able to actually operate like free markets on the inside as well as on the outside.</p>
+
+<p>And perhaps a basic income would also level the playing field and reduce barriers to entry for entrepreneurship just enough that average people with sufficiently good ideas and skills would be able to compete with the large firms who are slower to adapt to changes in technology and market demand.</p>
+]]></content>
+  </entry>
+  
+</feed>
