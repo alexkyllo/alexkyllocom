@@ -1,0 +1,48 @@
+---
+layout: post
+title: "Why Basic Income is Becoming a Basic Necessity"
+date: 2013-02-15 23:11
+comments: true
+categories: [class, income, politics]
+---
+
+This being my first post, I will lay out the underpinnings of some of my political positions that will form the context for my later pieces. As I am an American, I will speak in relation to my own country, but the concepts can be extended to many other places on earth.
+
+
+America's crisis is profound and it is not going away, because our middle class growth engine is running out of steam.
+
+
+The phenomenon that the New York Times aptly called ["The Great Decoupling"](http://www.nytimes.com/2012/12/12/opinion/global/jobs-productivity-and-the-great-decoupling.html) of productivity and employment, is a symptom of the fact that most Americans are economically dependent on the wide availability of repetitive, low-skill labor--the type of labor that is increasingly being done by machines and computers. Because the workers who are replaced by machines--with the exception of members of politically powerful labor unions--do not get to share in the profits created by these efficiency gains, technological progress is causing the wealth gap between owners and workers to grow faster and faster. Now, the typical counterpoint to this is that the same workers who are hurt by technology and outsourcing are also gaining from it, as evidenced by their ability to purchase electronic appliances and gadgets. But when you have no income, since you are unemployable, since technology made your skills obsolete, it doesn't matter how cheap the goods are, because the overall trajectory of your net worth is downward. For a shocking number of Americans [(about one in five)](http://usatoday30.usatoday.com/money/perfi/basics/story/2012-05-12/households-net-worth-university-of-michigan/54912016/1) it is already negative. What makes this doubly insulting is that the people who reaped the benefits of obsoleting their human employees through technology, are the same people who campaign and vote in ways that tear apart the social safety net that supports laid-off workers.
+
+
+America has survived this type of mass economic paradigm shift before, in the transition from the mostly agricultural society we had in the centuries before the Great Depression, to the mostly industrial society we had in the 50-some years between World War II and the rise of computers and the internet. But the growing pains from this type of change are suffered by an entire generation of workers--it is only their children who adapt to the new economy through education.  
+
+
+The most uncomfortable possibility, though, is that we might be entering a "post-labor" society wherein full employment is no longer necessary or even possible, because all low-skilled labor is automated. 
+
+
+A sound way to reduce the friction and deadweight loss caused by technology-induced obsoletion of human labor, would be to implement a [basic income guarantee](http://en.wikipedia.org/wiki/Basic_income_guarantee) along with universal health insurance for all U.S. citizens, as a way of sharing the benefits of our technological gains as a society.
+
+Despite that on the surface it sounds like socialism, there are several strong reasons why this is a good idea: 
+
++ The fact that you don't lose the benefit when you get a job means there is no perverse incentive to stay on the dole, like there is with unemployment benefits. Currently, people who receive welfare or unemployment mentally subtract that amount from the wages they would earn if they were employed, so they have less reason to find work.
+
++ It would reduce illness, morbidity, and the huge costs that currently go to providing emergency medical care and shelter for the sick who cannot pay for their own care.
+
++ It would make America more hospitable for its physically and mentally disabled citizens, and make them less dependent on family members.
+
++ It would remove the desperation factor from the employment equation. No one would have to take a terrible, low-paying job just to survive. Who wants to hire someone who is lazy and only working for base subsistence anyway? You would have to pay people a bit more to do undesirable jobs, but you could also pay people a little less to do interesting, fulfilling jobs. It wouldn't remove the incentive to work and earn money. It would just weed out those who are content to live on the dole and shouldn't be in the workplace anyway.
+
++ It would save private employers a fortune by reducing their payroll and benefits overhead tremendously. They would no longer have to provide a "living wage" or health insurance, but could simply pay market value for skilled labor.
+
++ It would reduce friction in hiring and firing, allowing companies to dismiss underproductive employees more easily, make greater use of temporary, project-based hires, and to take on more young employees whose strongest need is to gain experience and skills but currently cannot because the employees with seniority are firmly entrenched.
+
++ It would defuse some types of poisonous office politics because no one's basic subsistence would be dependent on staying employed at any one company. Disgruntled employees would be much freer to quit and look elsewhere, rather than staying and spreading negativity. Ladder climbers wouldn't need to do quite as much backstabbing and credit-taking in order to advance, because natural attrition would be somewhat higher in a lower-friction employment market.
+
++ It would make freelancing and entrepreneurship much less risky and more attractive. How many potential genius innovators are untapped because they also happen not to be big risk-takers? How many more of us would take the leap if we knew that there was a real safety net to catch us if we fell? The risk of failure is very real--only a small minority of small businesses and startup companies succeed. But how independent and innovative could we be if the odds were just a little bit better?
+
+
+Ask yourself this: if American companies are so interested in free market economics, competition, and efficiency, then why do the insides of a typical corporation, with its rigid political hierarchy, central allocation of resources, top-down communication channels, and five-year plans, look so much like communism? Now, if we had a real social safety net that freed us from depending so much on our employers to take care of us outside of work, then perhaps companies would be able to actually operate like free markets on the inside as well as on the outside. 
+
+
+And perhaps a basic income would also level the playing field and reduce barriers to entry for entrepreneurship just enough that average people with sufficiently good ideas and skills would be able to compete with the large firms who are slower to adapt to changes in technology and market demand.

@@ -1,0 +1,34 @@
+---
+layout: post
+title: "Literacy"
+date: 2013-02-26 21:37
+comments: true
+categories: [programming, economics]
+---
+
+Judging by the fact that more and more stories are bubbling up in the mainstream media about initiatives for teaching children to write computer programs, I've been feeling lately that a sea change is coming.
+
+Then today, I saw this video, in which Bill Gates, Mark Zuckerberg, will.i.am, and many other celebrities and successful geeks explain why learning code is A. a good idea and B. not that scary:
+
+<iframe width="560" height="315" src="http://www.youtube.com/embed/nKIu9yen5nc" frameborder="0" allowfullscreen></iframe>
+
+This video certainly downplays the challenges a bit--and not because programming languages are inscrutable gobbledygook, but simply because questions like "Where should I start?", "What language(s) should I study?", and "What sort of program do I want to make?" are actually very difficult to answer. 
+
+But this video does point out two key concepts very well: 
+
++ You don't have to be a computer scientist or a nerd to learn how to program--it is just like any other skill, and even like literacy ("You don't have to be a genius to code--do you have to be a genius to read?")
++ People who don't learn how to program anything at all are going to be left in the dust by people who do ("You're going to look like you have magic powers compared to everybody else")
+
+I will write on the second point in the next post, but right now I can speak on the first point from my own experience. My own desire to "learn to code" came out of frustration in the workplace. At my last job, I couldn't help but be bothered by the amount of manual effort that my colleagues and I spent on creating daily, weekly, and monthly, and on-demand reports to send to managers. When I say "reports" I mean Excel spreadsheets. With every employee creating a report and e-mailing it to his/her manager so frequently, there had to be millions of them floating around, with none of them under any sort of version control. Most of the time report creation involved looking up various points of data in "the system" and somehow getting them into the spreadsheet. The savvier employees tended to look for the "download" or "export to excel" functions in the system and craft their reports from the resulting data dump, while the more computer-illiterate would type the individual values into the cells and maybe even sum them up by punching them into a calculator by hand, blissfully unaware of Excel functions or even copy/paste.
+
+Now I had never "programmed" before, the closest thing I did beforehand was Excel functions like SUM or VLOOKUP, and making a few static HTML pages for hosting my resume online when I was in college. But something in me screamed, "There must be a better way to do this!" So without much of a clue what I was doing, I opened up Access to create a database for sales leads and asked my coworkers to input the leads in there so we could keep track of them over time, instead of sending them around in e-mailed spreadsheets. 
+
+Now, all I really knew about Access at this point was that it is "a database program." But the desire to create reports from the database led to playing around with the Query Builder, which sucked me into learning SQL, which got me to thinking, "What if I could actually make an application with a user interface that everyone in the office could use to pull reports on sales leads?"
+
+At that point, the question became "What technology or programming language do I need to learn in order to do this?" And my search for the answer led me to a basic web programming course where I learned the HTML/CSS, PHP, Javascript, and MySQL stack, which is probably still the simplest way to build a fully-functioning, database-driven web application. Surprisingly to me at the time, it is completely unnecessary to have even half a computer science degree in order to do this. You don't even really need a textbook. Thanks to the wealth of tutorials and references on the internet, all it takes is a computer with an internet connection, and a lot of patience for trial and error.
+
+However, my desire to *learn more programming* has led me deeper and deeper into the realm of computer science and I now fear I'm getting a bit lost in the weeds trying to learn too many different programming languages. While learning Ruby on Rails concurrently with Obj-C to make iPhone apps, Java to make Android apps, and also dabbling in Coursera courses on algorithms and functional programming, somehow seemed like a good idea at the time, the reality is that it's not a buffet and you do have to make some choices about what to learn. And while the internet is a great source of information, it is a terrible source of recommendation, because the hive-mind has no consensus. If you go googling "what programming language should I learn," you will get a variety of answers based on personal opinion. And while this may lead you to believe that your choice of language doesn't matter, it actually does because some languages are great for certain purposes and terrible for others. So the only good answer to this question is "depends." 
+
+So while I may have wasted a few months learning languages I didn't need to learn, or learning about programming paradigms that are far removed from business, I am now realizing that along the way I've picked up a lot--I am getting fairly comfortable with the UNIX and Windows command lines, version control tools like Git, a variety of text editors like emacs and IDEs like Eclipse and XCode. I know a few tools for quickly creating basic shell scripts, desktop apps, and web apps, and have built a few of each, both for making my job easier at work, and for practice. Most importantly I have learned to identify *when* a piece of software could help solve a problem, and I am starting to learn *how* to approach that problem with software. Now the trick is going to be to take what I have learned and find another particular business problem to focus on, and sharpen a particular subset of my programming skills to the point where they become second nature.
+
+This is where I'm at after about a year since I first picked up [Web Programming Step by Step](http://www.webstepbook.com/) with the goal of making a web app for keeping track of sales lead data at the office. I am grasping at "literacy" but I still have a long way to go until I will feel fully fluent.
