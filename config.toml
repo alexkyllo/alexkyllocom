@@ -4,6 +4,7 @@ title                   = "Alex Kyllo"
 theme                   = "hermit"
 rssLimit                = 10
 copyright               = "Alex Kyllo 2020"
+googleAnalytics         = "UA-38850327-1"
 
 [author]
     name                = "Alex Kyllo"
@@ -18,9 +19,9 @@ copyright               = "Alex Kyllo 2020"
     dateformNum         = "2006-01-02"
     dateformNumTime     = "2006-01-02 15:04 -0700"
     themeColor          = "#494f5c"
-
     homeSubtitle        = "Programming && Data Science"
-
+    relatedPosts        = true  # Add a related content section to all single posts page
+    code_copy_button    = true # Turn on/off the code-copy-button for code-fields
     [[params.social]]
         name            = "twitter"
         url             = "https://twitter.com/alexkyllo"
