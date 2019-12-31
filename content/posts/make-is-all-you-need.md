@@ -4,6 +4,8 @@ date: 2019-12-30T18:03:52-08:00
 draft: false
 tags:
   - data-science
+  - tools
+  - reproducibility
 ---
 
 As a data analyst mostly working with high level languages and GUI tools,
@@ -19,7 +21,7 @@ Linux and Mac, and there is a [Windows installer](http://gnuwin32.sourceforge.ne
 available. I love that it's language-agnostic, so it's perfect for teams
 where different people use R, Python, or other languages for their analysis code.
 It also gives you a "single point of contact" for all the scripts and commands
-that need tobe run for your project, so you can just type `make` or
+in your project, so you can just type `make` or
 `make [task name]` instead of having to remember and re-type each command.
 
 The [GNU Make Manual](https://www.gnu.org/software/make/manual/make.html)
@@ -35,7 +37,7 @@ targets : prerequisites
 A "target" and a "prerequisite" are usually filenames, but can also be just
 names for tasks (called "phony" targets).
 
-So why is this useful for data science projects?
+So why is this so useful for data science projects?
 
 Data analysis code typically involves five steps for processing data:
 
@@ -47,15 +49,15 @@ Data analysis code typically involves five steps for processing data:
 
 Without a disciplined approach, a typical R or Python script or notebook file
 will do all of these steps together, perhaps interleaved, making it difficult
-to pull apart these steps apart so that they can be executed separately.
+to pull the steps apart so that they can be executed separately.
 
 Why is it important to separate them? Some steps may process large quantities of
 data, so you don't want to re-run everything each time you change your script.
 Caching intermediate results saves you a lot of time as you're developing.
 
-Also, if you want to visualize your data with
-[ggplot2](https://ggplot2.tidyverse.org/) before training a predictive model
-with [Keras](https://keras.io/),
+Also, if you have mutli-language scenarios, say you want to visualize your data
+with [ggplot2](https://ggplot2.tidyverse.org/)
+before training a predictive model with [Keras](https://keras.io/),
 it's easiest to separate these steps into
 different scripts in different languages, rather than doing something
 complicated like spawning a Python subprocess from within R or vice versa.
@@ -91,8 +93,10 @@ recipe for `paper.pdf` will be rerun the next time you type `make`, because
 nothing upstream of it changed. This is an incredible time-saver when some of
 your recipes take a long time to run, as is often the case with data science projects.
 
-There isn't really an accepted data science code project structure or framework.
-The closest thing might be [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/#directory-structure)
+There isn't really an accepted standard data science code project structure
+or framework.
+The closest thing might be
+[Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/#directory-structure)
 (which also utilizes a Makefile), though it's Python-specific and I haven't seen
 it used "in the wild" yet. If you use a Makefile in your project, though, it doesn't
 matter that much how you structure your directories or even what language you use,
