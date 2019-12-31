@@ -1,18 +1,24 @@
 ---
 title: "Make Is All You Need"
 date: 2019-12-30T18:03:52-08:00
-draft: true
+draft: false
 ---
 
 As a data analyst mostly working with high level languages and GUI tools,
 I thought of [GNU Make](https://www.gnu.org/software/make/) as a tool
-(from 1976!) for building Linux binaries from compiled languages like C,
-and it didn't occur to me how it could be useful in my workflow.
+(from 1976!) for building Linux binaries from compiled languages,
+and it didn't occur to me how it could be useful in my workflow. Make is
+usually part of any curriculum for software engineers learning C/C++, but
+I seldom if ever see it mentioned in data science courses or tutorials.
 
-Today, I use make for all of my software and data science projects, and I
-consider it the most important tool for reproducibility. Plus it's
-language-agnostic so it's perfect for teams where different people use
-R, Python, or other languages for their analysis code.
+Today, I use Make for all of my software and data science projects, and I
+consider it the most important tool for reproducibility. It ships with
+Linux and Mac, and there is a [Windows installer](http://gnuwin32.sourceforge.net/packages/make.htm)
+available. I love that it's language-agnostic, so it's perfect for teams
+where different people use R, Python, or other languages for their analysis code.
+It also gives you a "single point of contact" for all the scripts and commands
+that need tobe run for your project, so you can just type `make` or
+`make [task name]` instead of having to remember and re-type each command.
 
 The [GNU Make Manual](https://www.gnu.org/software/make/manual/make.html)
 is quite approachable while also providing great detail, but in a nutshell,
@@ -20,9 +26,14 @@ you create a file called `Makefile` in your project directory and add to it
 a set of "rules" for producing output files from input files, in this form:
 
 ```make
-target : prerequisites
+targets : prerequisites
     recipe
 ```
+
+A "target" and a "prerequisite" are usually filenames, but can also be just
+names for tasks (called "phony" targets).
+
+So why is this useful for data science projects?
 
 Data analysis code typically involves five steps for processing data:
 
@@ -67,3 +78,24 @@ data.csv: query.sql
     sql2csv --db "sqlite:///database.db" query.sql
 ```
 
+Given this Makefile, when you type `make`, it will execute each of these
+recipes in dependency order, and then if you type `make` again, it will
+do nothing, because the dependencies haven't changed. Make looks at the
+file modified timestamps to see which steps actually need to be redone.
+If you change the `query.sql` file and type `make` again, it will rerun
+everything because that's the first item in the dependency chain, but if you
+only change the `paper.tex` file, then only the
+recipe for `paper.pdf` will be rerun the next time you type `make`, because
+nothing upstream of it changed. This is an incredible time-saver when some of
+your recipes take a long time to run, as is often the case with data science projects.
+
+There isn't really an accepted data science code project structure or framework.
+The closest thing might be [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/#directory-structure)
+(which also utilizes a Makefile), though it's Python-specific and I haven't seen
+it used "in the wild" yet. If you use a Makefile in your project, though, it doesn't
+matter that much how you structure your directories or even what language you use,
+as it will encourage you to break up your analysis scripts into a pipeline of small,
+dependent steps with cached results. Then when a colleague picks up your project,
+just looking at the Makefile will give them a clear idea of how everything works.
+So use Make for your data science projects and encourage your coworkers to do the
+same--you will thank each other!
