@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Alex Kyllo</title>
+    <link>https://alexkyllo.com/</link>
+    <description>Recent content on Alex Kyllo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Alex Kyllo 2020</copyright>
+    <lastBuildDate>Mon, 30 Dec 2019 17:30:18 -0800</lastBuildDate>
+    
+	<atom:link href="https://alexkyllo.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>About</title>
+      <link>https://alexkyllo.com/about/</link>
+      <pubDate>Mon, 30 Dec 2019 17:30:18 -0800</pubDate>
+      
+      <guid>https://alexkyllo.com/about/</guid>
+      <description>Hi, I&#39;m Alex. I work as a data scientist for Microsoft Azure, where I analyze telemetry and run experiments to discover and test methods of improving the developer user experience.
+Prior to this, I worked as a business data analyst, sales &amp;amp; marketing analyst, and IT systems analyst at a couple of different logistics companies.
+I&#39;m currently a student in the Graduate Certificate in Software Design and Development program at the University of Washington Bothell.</description>
+    </item>
+    
+    <item>
+      <title>Reboot</title>
+      <link>https://alexkyllo.com/posts/reboot/</link>
+      <pubDate>Mon, 30 Dec 2019 17:16:15 -0800</pubDate>
+      
+      <guid>https://alexkyllo.com/posts/reboot/</guid>
+      <description>I&#39;ve read many times that the key to success is to do things and tell people.
+In the new decade, I am going to put much more effort into the &amp;ldquo;tell people&amp;rdquo; part.</description>
+    </item>
+    
+  </channel>
+</rss>

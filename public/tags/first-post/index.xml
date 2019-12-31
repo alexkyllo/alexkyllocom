@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>first-post on Alex Kyllo</title>
+    <link>https://alexkyllo.com/tags/first-post/</link>
+    <description>Recent content in first-post on Alex Kyllo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Alex Kyllo 2020</copyright>
+    <lastBuildDate>Mon, 30 Dec 2019 17:16:15 -0800</lastBuildDate>
+    
+	<atom:link href="https://alexkyllo.com/tags/first-post/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reboot</title>
+      <link>https://alexkyllo.com/posts/reboot/</link>
+      <pubDate>Mon, 30 Dec 2019 17:16:15 -0800</pubDate>
+      
+      <guid>https://alexkyllo.com/posts/reboot/</guid>
+      <description>I&#39;ve read many times that the key to success is to do things and tell people.
+In the new decade, I am going to put much more effort into the &amp;ldquo;tell people&amp;rdquo; part.</description>
+    </item>
+    
+  </channel>
+</rss>
