@@ -1,3 +1,44 @@
-baseURL = "http://alexkyllo.com/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+baseURL                 = "http://alexkyllo.com/"
+languageCode            = "en-us"
+title                   = "Alex Kyllo"
+theme                   = "hermit"
+rssLimit                = 10
+copyright               = "Alex Kyllo 2020"
+
+[author]
+    name                = "Alex Kyllo"
+
+[taxonomies]
+    tag                 = "tags"
+
+
+[params]
+    dateform            = "Jan 2, 2006"
+    dateformShort       = "Jan 2"
+    dateformNum         = "2006-01-02"
+    dateformNumTime     = "2006-01-02 15:04 -0700"
+    themeColor          = "#494f5c"
+
+    homeSubtitle        = "Programming && Data Science"
+
+    [[params.social]]
+        name            = "twitter"
+        url             = "https://twitter.com/alexkyllo"
+    [[params.social]]
+        name            = "github"
+        url             = "https://github.com/alexkyllo"
+    [[params.social]]
+        name            = "linkedin"
+        url             = "https://linkedin.com/in/alexkyllo"
+
+[menu]
+
+    [[menu.main]]
+      name              = "Posts"
+      url               = "posts/"
+      weight            = 10
+
+    [[menu.main]]
+        name            = "About"
+        url             = "about/"
+        weight          = 20
