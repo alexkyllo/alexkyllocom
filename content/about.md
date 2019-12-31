@@ -18,6 +18,15 @@ Prior to this, I was a self-taught programmer, so I'm doing this to
 fill in gaps in my knowledge of computer science fundamentals, and to get
 exposure to the basics of low-level systems programming in C/C++.
 
+In the realm of data science, reproducibility is one of the areas I'm most
+passionate about. When putting together an analysis for a paper or presentation,
+it's tempting to do things in a manual fashion, but scripting your process goes
+a long way toward building credibility.
+
+I've contributed Python web programming and cloud DevOps support to
+[Curate Science](https://curatescience.org/), a non-profit site for encouraging
+transparency and reproducibility in academic research publications.
+
 I majored in Chinese Language and Literature and spent my sophomore year of
 university in Chengdu, Sichuan. I still read and speak Mandarin every day.
 I'm fascinated by Chinese history, it's one of my favorite conversation topics.
