@@ -21,7 +21,8 @@ exposure to the basics of low-level systems programming in C/C++.
 In the realm of data science, reproducibility is one of the areas I'm most
 passionate about. When putting together an analysis for a paper or presentation,
 it's tempting to do things in a manual fashion, but scripting your process goes
-a long way toward building credibility.
+a long way toward building credibility. I want to make that easier for myself
+and others.
 
 I've contributed Python web programming and cloud DevOps support to
 [Curate Science](https://curatescience.org/), a non-profit site for encouraging
