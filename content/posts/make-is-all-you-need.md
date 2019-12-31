@@ -2,6 +2,8 @@
 title: "Make Is All You Need"
 date: 2019-12-30T18:03:52-08:00
 draft: false
+tags:
+  - data-science
 ---
 
 As a data analyst mostly working with high level languages and GUI tools,
