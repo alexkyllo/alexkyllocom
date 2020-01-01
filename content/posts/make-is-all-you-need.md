@@ -92,16 +92,20 @@ only change the `paper.tex` file, then only the
 recipe for `paper.pdf` will be rerun the next time you type `make`, because
 nothing upstream of it changed. This is an incredible time-saver when some of
 your recipes take a long time to run, as is often the case with data science projects.
+I've seen many other tools designed to solve this problem, most of them
+language-specific and much more complex to learn and use than Make.
 
-There isn't really an accepted standard data science code project structure
-or framework.
+As far as how to structure a new project, there isn't really an accepted standard
+data science code project structure or framework.
 The closest thing might be
 [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/#directory-structure)
 (which also utilizes a Makefile), though it's Python-specific and I haven't seen
 it used "in the wild" yet. If you use a Makefile in your project, though, it doesn't
-matter that much how you structure your directories or even what language you use,
-as it will encourage you to break up your analysis scripts into a pipeline of small,
-dependent steps with cached results. Then when a colleague picks up your project,
-just looking at the Makefile will give them a clear idea of how everything works.
+really matter that much how you structure your directories or even what language you use,
+as thinking in terms of Make recipes will encourage you to break up your analysis
+scripts into a pipeline of small,
+dependent, repeatable steps with cached results. Then when a colleague picks up
+your project to review your work or enhance it, just looking at the Makefile will
+give them a clear idea of how it's put together.
 So use Make for your data science projects and encourage your coworkers to do the
 same--you will thank each other!
