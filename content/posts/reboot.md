@@ -8,7 +8,7 @@ tags:
   - first-post
 ---
 
-I've read many times that the key to success is to _[do things and tell people](http://carl.flax.ie/dothingstellpeople.html)._
+I've read many times that the key to success is just to _[do things and tell people](http://carl.flax.ie/dothingstellpeople.html)._
 
-In the new decade, I am going to put much more effort into the "tell people" part.
+In the new decade, I am going to put much more effort into the _tell people_ part.
 
