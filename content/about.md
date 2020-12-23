@@ -12,7 +12,7 @@ Prior to this, I worked as a business data analyst, sales & marketing analyst,
 and IT systems analyst at a couple of different logistics companies.
 
 I'm currently a student in the
-[Graduate Certificate in Software Design and Development](https://www.uwb.edu/stem/graduate/gcsdd)
+[Master of Science in Computer Science and Engineering](https://www.uwb.edu/mscsse)
 program at the University of Washington Bothell.
 Prior to this, I was a self-taught programmer, so I'm doing this to
 fill in gaps in my knowledge of computer science fundamentals, and to get
@@ -36,5 +36,3 @@ I want to someday make a significant contribution to the field of computing,
 perhaps by starting a new programming language, framework, database, or
 combination of these, that makes data analysis much faster and easier.
 I'll use my blog to document what I learn as I go along.
-
-
