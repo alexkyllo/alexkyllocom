@@ -93,7 +93,7 @@ child/non-child.
 
 There's a ton more work to be done in the space, and I still have
 doubts about whether the model really detected something intrinsic to
-fake faces that will generalizes well across more datasets. But for
+fake faces that will generalize well across more datasets. But for
 now, I think this experience demonstrates the value of using a
 diverse, heterogenous input dataset, testing the model on truly
 out-of-sample data, and considering and planning for a model fairness
